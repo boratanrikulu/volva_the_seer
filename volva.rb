@@ -50,7 +50,7 @@ class Volva
   end
 
   def check_percentages
-    @hash_inputs.last[:percentage_range] == 100
+    @hash_inputs.last[:percentage_range] == 100 unless @hash_inputs.size.zero?
   end
 
   def tell_me_what_to_do
